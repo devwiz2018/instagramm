@@ -17,6 +17,18 @@
  
         <style>
 
+            .bbb{
+                background-color: #0095f6;
+                border-radius: 5px;
+display: block;
+  border: 0;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 600;
+            }
+
 </style>   
 </head>
     <body>
@@ -27,19 +39,21 @@
             <div class="login__column">
                 <div class="login__box">
                     <img src="images/loginLogo.png" class="login__logo" />
+                                    <span onclick="alert('Not available, please login')" class='bbb bbb1'>
+                                        
+                                        <i class="fab fa-facebook-square mr-2"></i>
+                                        Continue with Facebook</span>
+                                    <span class="login__divider">or</span>
+                  
+                  
                     <form id='form' class="login__form">
                         <input type="text" id='username' name="username" placeholder="Username" required />
                         <input type="password" id='password' name="password" placeholder="Password" required />
                         <input type="submit" value="Log in" />
                     </form>
                    
-                    
 
-                    <span class="login__divider">or</span>
-                    <a href="#" class="login__link">
-                        <i class="fa fa-money"></i>
-                        Log in with Facebook
-                    </a>
+                  
                     <a href="#" class="login__link login__link--small">Forgot password</a>
                 </div>
                 <div class="login__box">
@@ -76,5 +90,7 @@
             </div>
         </footer>
     <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/184249fc52.js" async crossorigin="anonymous"></script>
+
     </body>
 </html>
